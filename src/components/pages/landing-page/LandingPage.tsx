@@ -5,12 +5,12 @@ import {
   Paper,
   TextField,
 } from "@mui/material";
-import moment from "moment";
 import AddIcon from "@mui/icons-material/Add";
+import TaskService from "../../../request/TaskService";
 
 export default function LandingPage() {
-  console.log(moment().format("dd, hh:mm, DD.MM.YYYY"));
 
+TaskService.getAllTasks().then((data) => {console.log(data)})
   return (
     <>
       <Container maxWidth="md">

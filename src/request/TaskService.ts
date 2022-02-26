@@ -1,3 +1,4 @@
+import moment from "moment";
 import api from "./Api";
 
 const TaskService = {
@@ -5,8 +6,8 @@ const TaskService = {
     const { data } = await api.get("/tasks");
     return data;
   },
-  post: async (task: any): Promise<any> => {
-      //mosch.created = moment().format("dd, hh:mm, DD.MM.YYYY");
+  createTask: async (task: any): Promise<any> => {
+      task.created = moment().format("dd, hh:mm, DD.MM.YYYY");
       const { data } = await api.post("/tasks", task);
       return data;
   }

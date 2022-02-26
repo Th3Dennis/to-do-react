@@ -3,7 +3,8 @@
         {
             "id": 1,
             "title": "Test Task",
-            "description": "Description of test task"
+            "description": "Description of test task",
+            "dateCompleted": "Sa, 06:28, 26.02.2022"
         }
     ]
 }

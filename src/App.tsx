@@ -1,9 +1,9 @@
-import Button from "./components/atoms/MuiButton";
+import LandingPage from "./components/pages/LandingPage";
 
 function App() {
   return (
     <div className="App">
-      <Button></Button>
+      <LandingPage></LandingPage>
     </div>
   );
 }

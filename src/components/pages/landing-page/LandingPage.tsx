@@ -1,14 +1,15 @@
 import {
   Container,
 } from "@mui/material";
-import TaskService from "../../../request/TaskService";
+import AddTask from "../../organisms/AddTask";
 
 export default function LandingPage() {
 
   return (
     <>
       <Container maxWidth="md">
-        <TaskService></TaskService>
+        <h1>Landing Page</h1>
+        <AddTask addFunction={() => {}}></AddTask>
       </Container>
     </>
   );
